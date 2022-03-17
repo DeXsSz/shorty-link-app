@@ -1,0 +1,180 @@
+.advannced{
+    padding-top: 12rem;
+    background-color: $Gray;
+    padding-bottom: 12rem;
+    h1{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .advannced__subtitle{
+        margin: 0 auto;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: $GrayishViolet;
+        text-align: center;
+    }
+    .grid-section{
+        margin-top: 6rem;
+        display: grid;
+        grid-row-gap: 5rem;
+    }
+    
+
+}
+.card{
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    // gap: 2rem;
+    padding: 3rem 5rem;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 1000;
+    h3{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 1.4rem;
+        color: $Gray;
+    }
+    .card__icon{
+        position: absolute;
+        top: -30px;
+        left: 43%;
+        background-color: $DarkViolet;
+        height: 6rem;
+        width: 6rem;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            vertical-align: top;
+            object-fit: cover;
+            height: 3rem;
+            width: 3rem;
+        }
+    }
+    
+}
+.card:nth-child(1){
+    &::after{
+        content: ' ';
+        height: 5rem;
+        width: 1rem;
+        background-color: $Cyan;
+        position: absolute;
+        z-index: 99;
+        bottom: -5rem;
+        left: 50%;
+    }
+}
+.card:nth-child(2){
+    &::after{
+        content: ' ';
+        height: 5rem;
+        width: 1rem;
+        background-color: $Cyan;
+        position: absolute;
+        z-index: 99;
+        bottom: -5rem;
+        left: 50%;
+    }
+}
+@media(min-width: 1024px){
+    .advannced{
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        .advannced__subtitle{
+            width: 40%;
+        }
+    }
+    .grid-section{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(6, 7rem);
+        grid-column-gap: 3rem;
+    }
+    .card{
+        background-color: white;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+        // gap: 2rem;
+        padding: 1rem 3rem;
+        border-radius: 1rem;
+        position: relative;
+        z-index: 100;
+        h3{
+            text-align: left;
+        }
+        p{
+            text-align: left;
+            font-size: 1.4rem;
+            color: $Gray;
+        }
+        .card__icon{
+            position: absolute;
+            top: -30px;
+            left: 30px;
+            background-color: $DarkViolet;
+            height: 6rem;
+            width: 6rem;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                vertical-align: top;
+                object-fit: cover;
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+        
+    }
+    .card:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1/4;
+        &::after{
+            content: ' ';
+            height: 1rem!important;
+            width: 4rem!important;
+            background-color: $Cyan;
+            position: absolute;
+            right: -4rem!important;
+            top: 70%!important;
+            z-index: 99!important;
+            right: 0;
+            left: 100%;
+        }
+    }
+    .card:nth-child(2){
+        
+        grid-column: 2/3;
+        grid-row: 2/5;
+        &::after{
+            content: ' ';
+            height: 1rem;
+            width: 4rem;
+            background-color: $Cyan;
+            position: absolute;
+            right: -4rem;
+            top: 70%;
+            z-index: 99;
+            left: 100%;
+
+        }
+    }
+    .card:nth-child(3){
+        grid-column: 3;
+        grid-row: 3/6;
+    }
+}

@@ -1,0 +1,14 @@
+.boost{
+    background-image: url('../../assets/images/bg-boost-desktop.svg');
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $DarkViolet;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}

@@ -1,0 +1,81 @@
+.form{
+    border-radius: 1rem;
+    position: absolute;
+    height: 12rem;
+    width: 70%;
+    bottom: -90px;
+    background-color: $DarkViolet;
+    background-image: url('../../assets/images/bg-shorten-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form-campo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        input{
+            width: 90%;
+            padding: 1rem 1.4rem;
+            border-radius: 1rem;
+            border: none;
+            outline: none;
+            font-weight: 700;
+            color: $GrayishViolet;
+            &::placeholder{
+                color: $GrayishViolet;
+            }
+            margin-bottom: 1rem;
+        }
+         .btn-cyan{
+             display: block;
+             width: 90%;
+            padding: 1.2rem 1.6rem!important;
+        }
+    }
+}
+@media (min-width: 1024px){
+    .form{
+        border-radius: 1rem;
+        position: absolute;
+        height: 10rem;
+        width: 80%;
+        bottom: -50px;
+        background-color: $DarkViolet;
+        background-image: url('../../assets/images/bg-shorten-desktop.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form-campo{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            input{
+                width: 80%;
+                padding: 1rem 1.4rem;
+                border-radius: 1rem;
+                border: none;
+                outline: none;
+                font-weight: 700;
+                color: $GrayishViolet;
+                margin-bottom: 0;
+                &::placeholder{
+                    color: $GrayishViolet;
+                }
+            }
+             .btn-cyan{
+                 width: max-content;
+                display: inline-block;
+                padding: 1.2rem 1.6rem!important;
+            }
+        }
+    }
+}

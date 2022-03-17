@@ -1,0 +1,53 @@
+.navbar{
+    position: relative;
+    z-index: 1000;
+    height: 6rem;
+    ul{
+        display: none;
+    }
+    li{
+        list-style: none;
+    }
+    .navbar__movil{
+        height: 6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .navbar__menuMovil-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: white;
+        height: 100vh;
+        position: relative;
+        z-index: 2000;
+    }
+
+}
+@media (min-width: 1024px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        height: 6rem;
+        .navbar__movil{
+            display: none;
+        }
+        ul{
+            list-style: none;
+            gap: 1.6rem;
+        }
+       
+        .navbar__nav{
+            display: flex;
+            align-items: center;
+        }
+        .navbar__account{
+            display: flex;
+            align-items: center;
+            
+        }
+    }
+}
